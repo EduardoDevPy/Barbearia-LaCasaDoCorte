@@ -204,7 +204,7 @@ body {
       rgba(0, 0, 0, 0.6) 30%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url("/assets/images/background2.jpg");
+    url("../assets/images/background2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -312,7 +312,7 @@ body {
   padding: 200px 20px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/assets/images/background3.jpg");
+    url("../assets/images/background3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -475,7 +475,7 @@ body {
   padding: 80px 20px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/assets/images/aniversario.jpg");
+    url("../assets/images/aniversario.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -545,7 +545,7 @@ body {
   padding: 100px 20px;
     background:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/assets/images/background5.jpg");
+    url("../assets/images/background5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -606,7 +606,7 @@ body {
   padding: 100px 20px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url("/assets/images/background4.jpg");
+    url("../assets/images/background4.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
