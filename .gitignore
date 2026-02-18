@@ -1,0 +1,29 @@
+# Pastas do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos temporários
+*.log
+*.tmp
+~*
+
+# Node modules (se usar no futuro)
+node_modules/
+package-lock.json
+
+# Arquivos de build
+dist/
+.dist/
+build/
+
+# Arquivos pessoais
+*.psd
+*.ai
+.env

@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Casa do Corte</title>
+    <!-- Importando CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Importando Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Importando Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="assets/images/logoHorizontal.png" alt="La Casa do Corte" />
+        </div>
+
+        <!-- Botão Hambúrguer -->
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav">
+          <a href="#inicio">Início</a>
+          <a href="#planos">Planos</a>
+          <a href="#cortes">Cortes</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#agendamento" class="btn-header">Agendar</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1>
+          La Casa<br />
+          <span>do</span> Corte
+        </h1>
+        <p>O plano é perfeito. O corte também.</p>
+        <div class="hero-buttons">
+          <a href="#agendamento" class="btn primary" data-servico="Corte"
+            >Agendar Corte</a
+          >
+          <a href="#servicos" class="btn outline">Ver Preços</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre-section">
+      <div class="sobre-container">
+        <div class="sobre-imagem">
+          <img src="assets/images/barbearia.png" alt="Interior da barbearia" />
+        </div>
+        <div class="sobre-conteudo">
+          <h2>A arte do <span class="destaque-gold">corte perfeito</span></h2>
+          <p>
+            No La Casa do Corte, cada cliente é único e cada corte é uma obra de
+            arte. Com profissionais experientes e ambiente exclusivo, oferecemos
+            muito mais que um corte de cabelo - proporcionamos uma experiência
+            completa.
+          </p>
+          <ul class="diferenciais">
+            <li>Profissionais certificados e especializados</li>
+            <li>Produtos de alta qualidade</li>
+            <li>Ambiente aconchegante e climatizado</li>
+            <li>Agendamento online</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preços -->
+    <section id="planos" class="precos-section">
+      <div class="section-title">
+        <h2>Planos</h2>
+        <p>Escolha sua estratégia</p>
+      </div>
+
+      <div class="precos-container">
+        <!-- Plano 1-->
+        <div class="plano-card">
+          <h3>Plano Professor</h3>
+          <p class="descricao">Corte masculino tradicional</p>
+          <span class="preco">R$ 50</span>
+          <button class="btn-plano" data-servico="Plano Professor">
+            Agendar
+          </button>
+        </div>
+
+        <!-- Plano 2 (Destaque)-->
+        <div class="plano-card destaque">
+          <span class="tag">Mais popular</span>
+          <h3>Plano Berlim</h3>
+          <p class="descricao">Corte + Barba</p>
+          <span class="preco">R$ 100</span>
+          <button class="btn-plano" data-servico="Plano Berlim">Agendar</button>
+        </div>
+
+        <!-- Plano 3 -->
+        <div class="plano-card">
+          <h3>Plano Tóquio</h3>
+          <p class="descricao">Corte + Barba + Sobrancelha</p>
+          <span class="preco">R$ 110</span>
+          <button class="btn-plano" data-servico="Plano Tóquio">Agendar</button>
+        </div>
+      </div>
+
+      <!-- Outros serviços -->
+      <div class="outros-servicos">
+        <div class="section-title">
+          <h3>Outros serviços</h3>
+          <p>Serviços adicionais disponíveis</p>
+        </div>
+
+        <div class="servicos-grid">
+          <!-- Serviço 1 -->
+          <div class="servico-item">
+            <h4>Barba</h4>
+            <span class="preco-servico">R$ 50</span>
+            <button class="btn-servico" data-servico="Barba">Agendar</button>
+          </div>
+          <!-- Serviço 2 -->
+          <div class="servico-item">
+            <h4>Pigmentação</h4>
+            <span class="preco-servico">R$ 60</span>
+            <button class="btn-servico" data-servico="Pigmentação">
+              Agendar
+            </button>
+          </div>
+
+          <!-- Serviço 3 -->
+          <div class="servico-item">
+            <h4>Alisamento</h4>
+            <span class="preco-servico">R$ 50</span>
+            <button class="btn-servico" data-servico="Alisamento">
+              Agendar
+            </button>
+          </div>
+
+          <!-- Serviço 4 -->
+          <div class="servico-item">
+            <h4>Sobrancelha</h4>
+            <span class="preco-servico">R$ 20</span>
+            <button class="btn-servico" data-servico="Sobrancelha">
+              Agendar
+            </button>
+          </div>
+
+          <!-- Serviço 5 -->
+          <div class="servico-item">
+            <h4>Cabelo + Sobrancelha</h4>
+            <span class="preco-servico">R$ 60</span>
+            <button class="btn-servico" data-servico="Cabelo+Sobrancelha">
+              Agendar
+            </button>
+          </div>
+
+          <!-- Serviço 6 -->
+          <div class="servico-item">
+            <h4>Pé de cabelo</h4>
+            <span class="preco-servico">R$ 20</span>
+            <button class="btn-servico" data-servico="Pé de Cabelo">
+              Agendar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Promoção Aniversariante -->
+
+    <section class="promo-section">
+      <div class="promo-container">
+        <div class="promo-content">
+          <img
+            src="assets/images/promocao.png"
+            alt="Aniversariante do mês - 15% OFF"
+            class="promo-banner"
+          />
+          <div class="promo-text">
+            <h3>É seu aniversário?</h3>
+            <p>
+              Ganhe <strong>15% de desconto</strong> em qualquer serviço durante
+              todo o mês do seu aniversário!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sessão Cortes -->
+    <section id="cortes" class="cortes-section">
+      <div class="section-title">
+        <h2>Nossos Cortes</h2>
+        <p>Cada detalhe faz parte do plano</p>
+      </div>
+
+      <div class="swiper cortes-swiper reveal">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="assets/images/Cortes/corteFreestyle3.jpg"
+              alt="Corte moicano"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="assets/images/Cortes/corteMoicano.jpg"
+              alt="Corte Freestyle"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/images/Cortes/barba.jpg" alt="Barba feita" />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="assets/images/Cortes/corteFreeStyle2.jpg"
+              alt="Corte Freestyle"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="assets/images/Cortes/corteFreestyle.jpg"
+              alt="Corte Freestyle"
+            />
+          </div>
+        </div>
+
+        <!--Controles Swiper -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="depoimentos-section">
+      <div class="section-title">
+        <p class="subtitulo">DEPOIMENTOS</p>
+        <h2>O que dizem nossos <span class="destaque-gold">clientes</span>?</h2>
+      </div>
+
+      <div class="depoimentos-container">
+        <!-- Card 1 -->
+        <div class="depoimento-card reveal">
+          <div class="cliente-foto">
+            <img src="assets/images/Clientes/cliente1.jpg" alt="" />
+          </div>
+          <div class="estrelas">★★★★★</div>
+          <p class="depoimento-texto">
+            Sempre top, ambiente agradável, atendimento vip, que Deus abençoe
+            sempre!
+          </p>
+          <h4 class="cliente-nome">Andrea Almeida</h4>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="depoimento-card reveal">
+          <div class="cliente-foto">
+            <img src="assets/images/Clientes/cliente2.png" alt="" />
+          </div>
+          <div class="estrelas">★★★★★</div>
+          <p class="depoimento-texto">
+            Um ótimo profissional, sempre levo meu filho pra cortar o cabelo com
+            o Damião. Ele é muito atencioso e faz um ótimo corte. Amei.
+          </p>
+          <h4 class="cliente-nome">Vanessa Moura</h4>
+        </div>
+        <!-- fecha depoimento-card -->
+
+        <!-- Card 3 -->
+        <div class="depoimento-card reveal">
+          <div class="cliente-foto">
+            <img src="assets/images/Clientes/cliente3.png" alt="" />
+          </div>
+          <div class="estrelas">★★★★★</div>
+          <p class="depoimento-texto">
+            O Damião é um excelente profissional, barbeiro acima da média que
+            age com muito respeito e profissionalismo com seus clientes. Desde
+            que cortei lá a primeira vez não parei mais de cortar com ele.
+            Excelente ambiente e climatizado! Recomendo!
+          </p>
+          <h4 class="cliente-nome">Dr Brito</h4>
+        </div>
+        <!-- fecha depoimento-card -->
+
+        <!-- Card 4 -->
+        <div class="depoimento-card reveal">
+          <div class="cliente-foto">
+            <img src="assets/images/Clientes/cliente4.png" alt="" />
+          </div>
+          <div class="estrelas">★★★★★</div>
+          <p class="depoimento-texto">
+            O lugar é ótimo! Organizado, limpo e com um excelente profissional!
+            Cara super de boa, muito Simpático e habilidoso! Não tem o que
+            reclamar!
+          </p>
+          <h4 class="cliente-nome">Nicolas S</h4>
+        </div>
+        <!-- fecha depoimento-card -->
+      </div>
+      <!-- fecha depoimentos-container -->
+    </section>
+    <!-- fecha depoimentos-section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-coluna">
+          <img
+            src="assets/images/logo.png"
+            alt="La Casa do Corte"
+            class="footer-logo"
+          />
+          <p>O plano é perfeito. O corte também.</p>
+          <div class="redes-sociais">
+            <a href="https://www.instagram.com/ilacasadocorte/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100093485344651"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio"
+              target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-coluna">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#cortes">Cortes</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-coluna">
+          <h3>Contato</h3>
+          <ul>
+            <li>📞 (19) 98317-2481</li>
+            <li>📍 Paulinia - SP</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 La Casa do Corte. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
