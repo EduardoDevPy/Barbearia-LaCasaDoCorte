@@ -6,6 +6,18 @@ Website oficial da Barbearia La Casa do Corte - Paulínia/SP
 
 Site moderno e responsivo desenvolvido para a barbearia La Casa do Corte, com integração direta ao WhatsApp para agendamentos.
 
+## 📸 Preview
+
+### 🖥️ Desktop
+
+<img src="Screenshots/desktop.jpg" alt="Preview Desktop" width="100%" />
+
+### 📱 Mobile
+
+<div align="center">
+  <img src="Screenshots/mobile.jpg" alt="Preview Mobile" width="300px" />
+</div>
+
 ## ✨ Funcionalidades
 
 - 🎯 Design responsivo (Mobile-first)
@@ -28,13 +40,20 @@ Site moderno e responsivo desenvolvido para a barbearia La Casa do Corte, com in
 
 ```
 ├── index.html
+├── README.md
 ├── css/
 │   ├── style.css
 │   └── variables.css
 ├── js/
 │   └── script.js
-└── assets/
-    └── images/
+├── assets/
+│   └── images/
+└── Screenshots/
+    ├── home-desktop.png
+    ├── home-mobile.png
+    ├── planos.png
+    ├── cortes.png
+    └── depoimentos.png
 ```
 
 ## 🚀 Como Usar
