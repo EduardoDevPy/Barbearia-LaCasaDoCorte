@@ -10,12 +10,14 @@ Site moderno e responsivo desenvolvido para a barbearia La Casa do Corte, com in
 
 ### 🖥️ Desktop
 
-<img src="screenshots/desktop.jpg" alt="Preview Desktop" width="100%" />
+<div align="center">
+<img src="assets/images/screenshots/desktop.jpg" alt="Preview Desktop" width="100%" />
+</div>
 
 ### 📱 Mobile
 
 <div align="center">
-  <img src="screenshots/mobile.jpg" alt="Preview Mobile" width="300px" />
+  <img src="assets/images/screenshots/mobile.jpg" alt="Preview Mobile" width="300px" />
 </div>
 
 ## ✨ Funcionalidades
@@ -46,14 +48,13 @@ Site moderno e responsivo desenvolvido para a barbearia La Casa do Corte, com in
 │   └── variables.css
 ├── js/
 │   └── script.js
-├── assets/
-│   └── images/
-└── Screenshots/
-    ├── home-desktop.png
-    ├── home-mobile.png
-    ├── planos.png
-    ├── cortes.png
-    └── depoimentos.png
+└── assets/
+    └── images/
+        ├── Clientes/
+        ├── Cortes/
+        └── screenshots/
+            ├── desktop.jpg
+            └── mobile.jpg
 ```
 
 ## 🚀 Como Usar
