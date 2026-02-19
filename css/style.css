@@ -354,7 +354,13 @@ body {
 
 .descricao {
   color: var(--gray-medium);
-  margin-bottom: 25px;
+}
+
+.line {
+  margin-top: 10px;
+  padding: 6px;
+  border-top: 1px solid var(--gold);
+  color: var(--red-primary);
 }
 
 .btn-plano {
@@ -543,7 +549,7 @@ body {
 /* Sobre */
 .sobre-section {
   padding: 100px 20px;
-    background:
+  background:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../assets/images/background5.jpg");
   background-size: cover;
@@ -634,10 +640,7 @@ body {
 }
 
 .depoimento-card {
-    background: linear-gradient(
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.8)
-  );
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   padding: 35px 25px;
   border-radius: 8px;
   text-align: center;
@@ -712,7 +715,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
 
 /* Footer */
 .footer {
@@ -863,8 +865,6 @@ body {
     margin-left: -100px;
   }
 
-  
-
   .nav {
     gap: 10px;
   }
@@ -878,7 +878,7 @@ body {
     font-size: 0.75rem;
   }
 
-    .menu-toggle {
+  .menu-toggle {
     display: flex;
   }
 
@@ -981,7 +981,7 @@ body {
     padding: 0 10px;
   }
 
-    .promo-section {
+  .promo-section {
     padding: 60px 16px;
   }
 
@@ -1101,7 +1101,7 @@ body {
     justify-content: center;
   }
 
-    .outros-servicos {
+  .outros-servicos {
     margin-top: 60px;
     padding-top: 40px;
   }
