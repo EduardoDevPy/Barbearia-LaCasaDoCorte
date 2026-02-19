@@ -54,6 +54,32 @@ const cortesSwiper = new Swiper(".cortes-swiper", {
   },
 });
 
+// Configuração Swiper Kids
+const kidsSwiper = new Swiper(".kids-swiper", {
+  loop: true,
+  spaceBetween: 30,
+
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+});
+
 // Animação On Scroll
 const reveals = document.querySelectorAll(".reveal");
 

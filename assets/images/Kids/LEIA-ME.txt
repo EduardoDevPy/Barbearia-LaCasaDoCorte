@@ -1,0 +1,22 @@
+📌 INSTRUÇÕES - PASTA KIDS
+
+Adicione aqui as fotos dos cortes infantis!
+
+NOMES DOS ARQUIVOS:
+- corte1.jpg
+- corte2.jpg
+- corte3.jpg
+- corte4.jpg
+- corte5.jpg
+
+IMPORTANTE:
+✅ Use esses nomes EXATOS (pode adicionar mais se quiser)
+✅ Formato JPG ou PNG
+✅ Fotos de boa qualidade
+✅ Preferencialmente com boa iluminação
+
+RESOLUÇÃO RECOMENDADA:
+- Largura: 800px - 1200px
+- Altura: 800px - 1200px
+
+Depois de adicionar as fotos, é só fazer commit e push pro GitHub que a Vercel atualiza automático! 🚀

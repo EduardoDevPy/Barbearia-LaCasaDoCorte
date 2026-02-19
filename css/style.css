@@ -297,6 +297,79 @@ body {
   opacity: 1;
 }
 
+/* Sessão Kids */
+.kids-section {
+  padding: 80px 20px;
+  background:
+    linear-gradient(rgba(4, 4, 7, 0.95), rgba(0, 0, 0, 0.85)),
+    url("../assets/images/background6.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.kids-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(212, 175, 55, 0.05) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.subtitulo-kids {
+  color: var(--gold-light);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.kids-frase {
+  font-size: 1.2rem !important;
+  color: var(--white) !important;
+  font-weight: 500;
+  max-width: 600px;
+  margin: 20px auto 0 !important;
+  line-height: 1.6;
+}
+
+.kids-swiper {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.kids-swiper .swiper-slide img {
+  width: 50%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid var(--gold-light);
+  box-shadow:
+    0 10px 30px rgba(212, 175, 55, 0.2),
+    0 0 40px rgba(212, 175, 55, 0.1);
+  filter: brightness(1);
+  transition: all 0.4s ease;
+}
+
+.kids-swiper .swiper-slide img:hover {
+  filter: brightness(1.1);
+  transform: scale(1.02);
+  box-shadow:
+    0 15px 40px rgba(212, 175, 55, 0.3),
+    0 0 60px rgba(212, 175, 55, 0.15);
+}
+
 /* Preços */
 
 .preco {
@@ -981,6 +1054,26 @@ body {
     padding: 0 10px;
   }
 
+  /* Sessão Kids */
+  .kids-section {
+    padding: 60px 16px;
+  }
+
+  .kids-frase {
+    font-size: 1rem !important;
+    padding: 0 10px;
+  }
+
+  .kids-swiper {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .kids-swiper .swiper-slide img {
+    width: 70%;
+    height: 350px;
+  }
+
   .promo-section {
     padding: 60px 16px;
   }
@@ -1021,6 +1114,11 @@ body {
     width: 70%;
     height: 300px;
     border-radius: 4px;
+  }
+
+  .kids-swiper .swiper-slide img {
+    width: 70%;
+    height: 280px;
   }
 
   /* Botões Swiper menores */
@@ -1150,6 +1248,19 @@ body {
     max-width: 900px;
   }
 
+  /* Sessão Kids */
+  .kids-section {
+    padding: 80px 20px;
+  }
+
+  .kids-swiper {
+    max-width: 900px;
+  }
+
+  .kids-swiper .swiper-slide img {
+    height: 500px;
+  }
+
   /* Imagens médias no tablet */
   .swiper-slide img {
     height: 500px;
@@ -1173,6 +1284,14 @@ body {
 @media (min-width: 1200px) {
   .cortes-swiper {
     max-width: 1300px;
+  }
+
+  .kids-swiper {
+    max-width: 1300px;
+  }
+
+  .kids-swiper .swiper-slide img {
+    height: 550px;
   }
 
   .swiper-slide img {
