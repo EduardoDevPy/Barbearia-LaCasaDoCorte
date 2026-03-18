@@ -39,13 +39,13 @@ const cortesSwiper = new Swiper(".cortes-swiper", {
   },
 
   pagination: {
-    el: ".swiper-pagination",
+    el: ".cortes-swiper .swiper-pagination",
     clickable: true,
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".cortes-swiper .swiper-button-next",
+    prevEl: ".cortes-swiper .swiper-button-prev",
   },
 
   effect: "fade",
@@ -65,13 +65,13 @@ const kidsSwiper = new Swiper(".kids-swiper", {
   },
 
   pagination: {
-    el: ".swiper-pagination",
+    el: ".kids-swiper .swiper-pagination",
     clickable: true,
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".kids-swiper .swiper-button-next",
+    prevEl: ".kids-swiper .swiper-button-prev",
   },
 
   effect: "fade",
@@ -79,6 +79,45 @@ const kidsSwiper = new Swiper(".kids-swiper", {
     crossFade: true,
   },
 });
+
+// Carrossel de serviços apenas em telas menores
+let servicosSwiper = null;
+const servicosMediaQuery = window.matchMedia("(max-width: 1024px)");
+
+const toggleServicosSwiper = () => {
+  if (servicosMediaQuery.matches) {
+    if (!servicosSwiper) {
+      servicosSwiper = new Swiper(".servicos-swiper", {
+        loop: false,
+        spaceBetween: 14,
+        slidesPerView: 1,
+
+        pagination: {
+          el: ".servicos-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".servicos-next",
+          prevEl: ".servicos-prev",
+        },
+
+        breakpoints: {
+          769: {
+            slidesPerView: 2,
+            spaceBetween: 18,
+          },
+        },
+      });
+    }
+  } else if (servicosSwiper) {
+    servicosSwiper.destroy(true, true);
+    servicosSwiper = null;
+  }
+};
+
+toggleServicosSwiper();
+servicosMediaQuery.addEventListener("change", toggleServicosSwiper);
 
 // Animação On Scroll
 const reveals = document.querySelectorAll(".reveal");
