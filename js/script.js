@@ -161,7 +161,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // WhatsApp Automático para todos os botões
-const whatsappNumber = "5519983172481";
+const whatsappNumber = "5519982383705";
 
 const botoesAgendar = document.querySelectorAll(
   ".btn-plano, .btn-servico, .btn.primary, .btn-header",
